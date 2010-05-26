@@ -1,0 +1,21 @@
+To use:
+
+	- git clone git@github.com:dmachi/Dojotoolkit-Demos.git
+	- cd Dojotoolkit-Demos
+	- ./bin/persvr
+	- browse http://localhost:8080/Page/Home
+
+Useful file locations:
+	templates/  - root template dir, currently not configurable and everything is relative to it.
+		      Inside of the template dir are html templates in a format similar, but not exactly
+	 	      like DTL.  It will move towards mimicking that when possible, but differs slightly now.
+		      The directory can hold any templates, though there are templates in there that are automatically
+		      looked up by name.  First the template system will look for a template by instance id (templates/Page/Home.html, templates/Demo/TestDemo1.html).  
+    		      If these aren't found, it will look in the class's name (templates/Page.html, templates/Demo.html).
+
+	WEB-INF/jslib/ - Contains the classes and template system in use for this application
+
+	
+	
+	
+
