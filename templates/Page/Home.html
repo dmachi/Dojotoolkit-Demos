@@ -1,0 +1,9 @@
+{%extend Page.html%}
+
+{%block pageTitle%}{{name}}{%/block%}
+ 
+{%block body%}
+	{%foreach demo in demos()%}
+		<a href="/{{demo.id}}"><h1>{{demo.name}}</h1></a>
+	{%/foreach}	
+{%/block%}
