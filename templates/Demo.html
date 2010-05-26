@@ -1,11 +1,32 @@
 <html>
 	<head>
 		<title>{%block pageTitle%}Demo{%/block%}</title>
+		{%block headerMeta%}
+
+		{%/block%}
+
+		{%block baseCSS%}
+
+		{%/block%}
+
+		{%block headScript%}
+
+		{%/block%}
 	</head>
 
-	<body>
-		{%block body%}
+	{%block body%}
+	<body class="{%block bodyClass%}claro{%/block%}">
+		{%block demoHeader%}
+			{%include demoHeader.html%}
+		{%block}
+
+		{%block bodyContent%}
 			<h1>Demo</h1>
 		{%/block%}
+
+		{%block eobScript%}
+
+		{%/block%}
 	</body>
+	{%/block%}
 </html>
