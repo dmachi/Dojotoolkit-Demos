@@ -1,0 +1,16 @@
+{%extend Demo%}
+
+{%block pageTitle%}Test Demo 1 - {{name}}{%/block%}
+
+{%block bodyContent%}
+	{%block navigation%}
+		<div>
+			<a href="index">Main</a> <a href="p2">Page 2</a>
+		</div>
+	{%/block%}
+
+	{%block demoContent%}
+		{{bodyContent}}
+	{%/block%}
+{%/block%}
+

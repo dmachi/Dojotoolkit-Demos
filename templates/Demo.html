@@ -14,19 +14,29 @@
 		{%/block%}
 	</head>
 
-	{%block body%}
 	<body class="{%block bodyClass%}claro{%/block%}">
 		{%block demoHeader%}
-			{%include demoHeader.html%}
-		{%block}
+			{%include demoHeader%}
+		{%/block%}
 
 		{%block bodyContent%}
-			<h1>Demo</h1>
+			<h1>Default Content</h1>
 		{%/block%}
+		{%block djConfig%}
+			<script type="text/javascript">	
+				djConfig = {
+					parseOnLoad: true,
+					isDebug: true
+				}
+			</script>
+		{%/block%}
+		
 
+		{%block dojoScriptInclude%}
+			<script type="text/javascript" src="/jsclient/release-1.5.0b3/dojo/dojo.js"></script>
+		{%/block%}
 		{%block eobScript%}
-
+	
 		{%/block%}
 	</body>
-	{%/block%}
 </html>
